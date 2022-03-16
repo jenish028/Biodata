@@ -37,7 +37,7 @@
         android:padding="10dp"
         android:gravity="center"
         >
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:scaleType="centerCrop"
