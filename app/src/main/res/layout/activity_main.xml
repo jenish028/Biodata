@@ -20,7 +20,6 @@
         android:background="#13CA90"
         android:orientation="vertical"
         >
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -36,6 +35,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:gravity="center"
+        android:orientation="vertical"
         >
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="150dp"
@@ -43,8 +43,32 @@
             android:scaleType="centerCrop"
             android:src="@drawable/tom"
             />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            >
 
-</LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tom  "
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="holade"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -78,7 +102,7 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_marginLeft="30dp"
-                   android:text="Jenish"
+                   android:text="Tom"
                    android:textSize="20dp"
                    android:textColor="@color/black"
                    />
@@ -101,7 +125,7 @@
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:text="Dobariya"
+                   android:text="holand"
                    android:textSize="20dp"
                    android:textColor="@color/black"
                    />
