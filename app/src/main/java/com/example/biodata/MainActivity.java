@@ -12,7 +12,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView education_txt;
     private TextView brithdata_txt;
     private TextView skills_txt;
-    private TextView gmail_txt;
+    private TextView gmail_txt,male_txt;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         String brithdata = getIntent().getStringExtra("n8");
         String skills = getIntent().getStringExtra("n9");
         String gmail = getIntent().getStringExtra("n10");
+        String gender = getIntent().getStringExtra("n11");
 
         name_txt.setText(name);
         name1_txt.setText(name);
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         brithdata_txt.setText(brithdata);
         skills_txt.setText(skills);
         gmail_txt.setText(gmail);
+        male_txt.setText(gender);
     }
 
     private void blinding() {
@@ -57,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         brithdata_txt=findViewById(R.id.brithdata_txt);
         skills_txt=findViewById(R.id.skills_txt);
         gmail_txt=findViewById(R.id.gmail_txt);
+        male_txt=findViewById(R.id.male_txt);
 
 
     }
