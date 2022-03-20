@@ -22,14 +22,12 @@ public class Data_Activity2 extends AppCompatActivity {
     private EditText surname_edt,fname_edt,mobileno_edt,education_edt;
     private EditText brithdata_edt;
     private EditText gmail_edt;
-// //   private TextView gender_txt;
     private RadioGroup rg_group;
     private RadioButton male_rg_btn,female_rg_btn;
     private CheckBox movie_chk,reading_chk,dancing_chk;
     private TextView age1_txt;
     private SeekBar age_seek;
     String gender,dancing,movie,reading;
-     String  skills1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +40,11 @@ public class Data_Activity2 extends AppCompatActivity {
                 if (b == true) {
                     reading = "Reading";
                 } else {
-                    reading = " ";
+                    reading = "";
                 }
 
             }
         });
-        Toast.makeText(this, ""+reading, Toast.LENGTH_SHORT).show();
 
         movie_chk.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -58,7 +55,7 @@ public class Data_Activity2 extends AppCompatActivity {
                 }
                 else
                 {
-                    movie=" ";
+                    movie="";
                 }
             }
         });
@@ -71,11 +68,9 @@ public class Data_Activity2 extends AppCompatActivity {
                 }
                 else
                 {
-                    dancing=" ";
+                    dancing="";
                 }
             }
-            //                Toast.makeText(Data_Activity2.this, ""+movie, Toast.LENGTH_SHORT).show();
-
         });
 
         age_seek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -102,10 +97,6 @@ public class Data_Activity2 extends AppCompatActivity {
                 String education=education_edt.getText().toString();
                 String brithdata=brithdata_edt.getText().toString();
                 String gmail= gmail_edt.getText().toString();
-
-                String skills2=movie_chk.getText().toString();
-                String skills3=dancing_chk.getText().toString();
-
                 if(rg_group.getCheckedRadioButtonId()==R.id.male_rg_btn)
                 {
                     gender="Male";
@@ -114,49 +105,43 @@ public class Data_Activity2 extends AppCompatActivity {
                 {
                     gender="Female";
                 }
-//                if(name_edt.getText().length()==0)
-//                {
-//                        name_edt.setError("Enter the Name");
-//                }
-//                else if(surname_edt.getText().length()==0)
-//                {
-//                    surname_edt.setError("Enter The surname");
-//                }
-//                else if(fname_edt.getText().length()==0)
-//                {
-//                    fname_edt.setError("Enter The Father Name");
-//                }
-//               else if(village_edt.getText().length()==0)
-//                {
-//                    village_edt.setError("Enter The village Name");
-//                }
-//               else if(age_edt.getText().length()==0)
-//                {
-//                    age_edt.setError("Enter The age Name");
-//                }
-//               else if(mobileno_edt.getText().length()==0)
-//                {
-//                    mobileno_edt.setError("Enter The Moblie No.");
-//                }
-//                else if(education_edt.getText().length()==0)
-//                {
-//                    education_edt.setError("Enter The Education");
-//                }
-//                else if(brithdata_edt.getText().length()==0)
-//                {
-//                    brithdata_edt.setError("Enter The Brith Data");
-//                }
-//                else if(skills_edt.getText().length()==0)
-//                {
-//                    skills_edt.setError("Enter The skills");
-//                }
-//                else if(gmail_edt.getText().length()==0)
-//                {
-//                    gmail_edt.setError("Enter The gmail(");
-//                }
+                if(name_edt.getText().length()==0)
+                {
+                        name_edt.setError("Enter the Name");
+                }
+                else if(surname_edt.getText().length()==0)
+                {
+                    surname_edt.setError("Enter The surname");
+                }
+                else if(fname_edt.getText().length()==0)
+                {
+                    fname_edt.setError("Enter The Father Name");
+                }
+               else if(village_edt.getText().length()==0)
+                {
+                    village_edt.setError("Enter The village Name");
+                }
+
+               else if(mobileno_edt.getText().length()==0)
+                {
+                    mobileno_edt.setError("Enter The Moblie No.");
+                }
+                else if(education_edt.getText().length()==0)
+                {
+                    education_edt.setError("Enter The Education");
+                }
+                else if(brithdata_edt.getText().length()==0)
+                {
+                    brithdata_edt.setError("Enter The Brith Data");
+                }
+
+                else if(gmail_edt.getText().length()==0)
+                {
+                    gmail_edt.setError("Enter The gmail(");
+                }
                 //   Toast.makeText(Data_Activity2.this, name+"\n"+surname+"\n"+fname+"\n"+village+"\n"+age+"\n"+mobile, Toast.LENGTH_SHORT).show();
-//            else{
-                    Intent intent = new Intent(Data_Activity2.this,MainActivity.class);
+            else{
+                Intent intent = new Intent(Data_Activity2.this,MainActivity.class);
                     intent.putExtra("n1",name);
                     intent.putExtra("n2",surname);
                     intent.putExtra("n3",fname);
@@ -167,12 +152,12 @@ public class Data_Activity2 extends AppCompatActivity {
                     intent.putExtra("n8",brithdata);
                     intent.putExtra("n10",gmail);
                     intent.putExtra("n11",gender);
-                    intent.putExtra("n12",skills1);
-                    intent.putExtra("n13",skills2);
-                    intent.putExtra("n14",skills3);
+                    intent.putExtra("n12",reading);
+                    intent.putExtra("n13",movie);
+                    intent.putExtra("n14",dancing);
 
                     startActivity(intent);
-//                }
+                }
             }
         });
     }
@@ -181,7 +166,6 @@ public class Data_Activity2 extends AppCompatActivity {
         name_edt=findViewById(R.id.name_edt);
         surname_edt=findViewById(R.id.surname_edt);
         fname_edt=findViewById(R.id.fname_edt);
-      ////  gender_txt=findViewById(R.id.gender_txt);
         rg_group=findViewById(R.id.rg_group);
         male_rg_btn=findViewById(R.id.male_rg_btn);
         female_rg_btn=findViewById(R.id.female_rg_btn);
@@ -196,4 +180,4 @@ public class Data_Activity2 extends AppCompatActivity {
         movie_chk=findViewById(R.id.movie_chk);
         dancing_chk=findViewById(R.id.dancing_chk);
     }
-}
+    }

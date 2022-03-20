@@ -186,6 +186,7 @@
                         android:layout_height="40dp"
                         android:min="0"
                         android:max="100"
+
                         android:layout_gravity="bottom"
                         />
 
