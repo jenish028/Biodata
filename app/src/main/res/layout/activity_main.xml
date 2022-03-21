@@ -56,6 +56,7 @@
                         android:id="@+id/name1_txt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
                         android:text="tom  "
                         android:textColor="@color/black"
                         android:textSize="20dp" />
@@ -65,6 +66,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="4dp"
+                        android:fontFamily="@font/poppins"
                         android:text="holade"
                         android:textColor="@color/black"
                         android:textSize="20dp" />
@@ -95,19 +97,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
+                        android:fontFamily="@font/poppins"
                         android:text="Name              :"
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
-                    <TextView
-                        android:id="@+id/name_txt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:text="Tom"
-                        android:textColor="@color/black"
-                        android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Tom"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
 
                 </LinearLayout>
 
@@ -121,6 +124,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Surname         :"
+                        android:fontFamily="@font/poppins"
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
@@ -129,6 +133,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/poppins"
                         android:text="holand"
 
                         android:textColor="@color/black"
@@ -147,7 +152,9 @@
                         android:layout_height="wrap_content"
                         android:text="Fathername    :"
                         android:textColor="@color/black"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppins"
+                        />
 
                     <TextView
                         android:id="@+id/fname_txt"
@@ -157,6 +164,7 @@
                         android:layout_marginLeft="5dp"
                         android:text=" "
                         android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
                         android:textSize="20dp" />
 
                 </LinearLayout>
@@ -172,6 +180,7 @@
                         android:layout_height="wrap_content"
                         android:text="Village             :"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
                         android:textSize="20dp" />
 
                     <TextView
@@ -181,6 +190,7 @@
                         android:layout_marginLeft="5dp"
                         android:text="Kamdhiya"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
                         android:textSize="20dp" />
 
                 </LinearLayout>
@@ -196,6 +206,7 @@
                         android:layout_height="wrap_content"
                         android:text="Age                  :"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
                         android:textSize="20dp" />
 
                     <TextView
@@ -205,6 +216,7 @@
                         android:layout_marginLeft="5dp"
                         android:text="18"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
                         android:textSize="20dp" />
 
                 </LinearLayout>
@@ -219,6 +231,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Gender            :"
+                        android:fontFamily="@font/poppins"
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
@@ -228,6 +241,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:text="m"
+                        android:fontFamily="@font/poppins"
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
@@ -244,6 +258,7 @@
                         android:layout_height="wrap_content"
                         android:text="Mobile No       :"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
                         android:textSize="20dp" />
 
                     <TextView
@@ -251,10 +266,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:text="9991230098"
+                        android:text=" "
+                        android:fontFamily="@font/poppins"
                         android:textColor="@color/black"
                         android:textSize="20dp" />
+                    <ImageView
+                        android:id="@+id/phone_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_phone_24"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
 
+
+                        />
                 </LinearLayout>
 
 
@@ -269,6 +294,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="Education       :"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -278,6 +304,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="B.sc"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -293,6 +320,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="Birth Date       :"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -301,6 +329,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="28-03-2022"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:layout_marginLeft="5dp"
                     android:textSize="20dp" />
@@ -316,7 +345,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Skills               :"
+                    android:text="Skills              :"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -326,6 +356,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Android"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
                 <TextView
@@ -334,6 +365,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Android"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
                 <TextView
@@ -341,8 +373,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:text="Android"
+                    android:text="Androi"
                     android:textColor="@color/black"
+                    android:fontFamily="@font/poppins"
                     android:textSize="20dp" />
 
             </LinearLayout>
@@ -358,6 +391,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="Gmail              :"
                     android:textColor="@color/black"
+                    android:fontFamily="@font/poppins"
                     android:textSize="20dp" />
 
                 <TextView
@@ -367,6 +401,7 @@
                     android:layout_marginLeft="5dp"
                     android:text="jenishdobariya@gmail.com"
                     android:textColor="@color/black"
+                    android:fontFamily="@font/poppins"
                     android:textSize="20dp"
 
                     />
@@ -383,6 +418,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="Study              :"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -390,6 +426,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/poppins"
                     android:text="College Running"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
@@ -406,6 +443,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="Marage          :"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -414,33 +452,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Not Maride"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
             </LinearLayout>
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:padding="3dp">-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="10dp"-->
-<!--                    android:text="Hobby :"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="20dp" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="29dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Chess,movie"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="20dp" />-->
-
-<!--            </LinearLayout>-->
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -452,6 +468,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="Nationality     :"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -460,7 +477,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Indian"
+
                     android:textColor="@color/black"
+                    android:fontFamily="@font/poppins"
                     android:textSize="20dp" />
 
             </LinearLayout>
@@ -475,6 +494,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="Religion          :"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -483,6 +503,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Hindu"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -498,6 +519,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="Languages     :"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -507,6 +529,7 @@
                     android:text="Hindi,gujarati,english"
                     android:textColor="@color/black"
                     android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/poppins"
                     android:textSize="20dp" />
 
             </LinearLayout>
@@ -521,6 +544,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text=" Address         :"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -529,56 +553,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="Surat"
+                    android:fontFamily="@font/poppins"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
-
             </LinearLayout>
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:padding="3dp">-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="10dp"-->
-<!--                    android:text="Gmail :"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="20dp" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="30dp"-->
-<!--                    android:text="jenishdobariya2003"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="20dp" />-->
-
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:padding="3dp">-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="10dp"-->
-<!--                    android:text="Gmail :"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="20dp" />-->
-
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="30dp"-->
-<!--                    android:text="jenishdobariya2003"-->
-<!--                    android:textColor="@color/black"-->
-<!--                    android:textSize="20dp" />-->
-
-<!--            </LinearLayout>-->
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

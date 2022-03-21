@@ -33,7 +33,9 @@ public class Data_Activity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data2);
+
         blinding();
+
         reading_chk.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -139,7 +141,7 @@ public class Data_Activity2 extends AppCompatActivity {
                 {
                     gmail_edt.setError("Enter The gmail(");
                 }
-                else if(age1_txt.getText().length()==1)
+                else if(age1_txt.getText().length()==0)
                 {
                     age1_txt.setError("Enter Age");
                 }

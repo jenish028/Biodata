@@ -2,8 +2,11 @@ package com.example.biodata;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView gmail_txt,male_txt;
     private TextView skills1_txt;
     private TextView skills2_txt,skills3_txt;
+    private ImageView phone_img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +56,24 @@ public class MainActivity extends AppCompatActivity {
         skills1_txt.setText(skill1);
         skills2_txt.setText(skill2);
         skills3_txt.setText(skill3);
+//        moblieno_txt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                String no ="tel:"+moblieno;
+//                Intent i=new Intent(Intent.ACTION_CALL);
+//                i.setData(Uri.parse(no));
+//                startActivity(i);
+//            }
+//        });
+        phone_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String no="tel:"+moblieno;
+                Intent i=new Intent(Intent.ACTION_CALL);
+                i.setData(Uri.parse(no));
+                startActivity(i);
+            }
+        });
 
     }
 
@@ -72,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
         skills3_txt=findViewById(R.id.skills3_txt);
         gmail_txt=findViewById(R.id.gmail_txt);
         male_txt=findViewById(R.id.male_txt);
+        phone_img =findViewById(R.id.phone_img);
 
     }
 }
