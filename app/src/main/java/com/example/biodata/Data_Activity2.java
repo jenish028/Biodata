@@ -139,6 +139,10 @@ public class Data_Activity2 extends AppCompatActivity {
                 {
                     gmail_edt.setError("Enter The gmail(");
                 }
+                else if(age1_txt.getText().length()==1)
+                {
+                    age1_txt.setError("Enter Age");
+                }
                 //   Toast.makeText(Data_Activity2.this, name+"\n"+surname+"\n"+fname+"\n"+village+"\n"+age+"\n"+mobile, Toast.LENGTH_SHORT).show();
             else{
                 Intent intent = new Intent(Data_Activity2.this,MainActivity.class);
