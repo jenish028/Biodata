@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView brithdata_txt;
     private TextView gmail_txt,male_txt;
     private TextView skills1_txt;
-    private TextView skills2_txt,skills3_txt;
+    private TextView skills2_txt,skills3_txt,skills4_txt;
     private ImageView phone_img;
 
     @Override
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         String skill1 = getIntent().getStringExtra("n12");
         String skill2 = getIntent().getStringExtra("n13");
         String skill3 = getIntent().getStringExtra("n14");
+        String skill4 = getIntent().getStringExtra("n15");
 
 
 
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         skills1_txt.setText(skill1);
         skills2_txt.setText(skill2);
         skills3_txt.setText(skill3);
+        skills4_txt.setText(skill4);
 //        moblieno_txt.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -74,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
     }
 
     private void blinding() {
@@ -92,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
         skills1_txt=findViewById(R.id.skills1_txt);
         skills2_txt=findViewById(R.id.skills2_txt);
         skills3_txt=findViewById(R.id.skills3_txt);
+        skills4_txt=findViewById(R.id.skills4_txt);
+        skills4_txt=findViewById(R.id.skills4_txt);
         gmail_txt=findViewById(R.id.gmail_txt);
         male_txt=findViewById(R.id.male_txt);
         phone_img =findViewById(R.id.phone_img);

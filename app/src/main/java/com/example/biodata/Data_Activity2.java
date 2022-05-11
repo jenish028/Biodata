@@ -24,10 +24,11 @@ public class Data_Activity2 extends AppCompatActivity {
     private EditText gmail_edt;
     private RadioGroup rg_group;
     private RadioButton male_rg_btn,female_rg_btn;
-    private CheckBox movie_chk,reading_chk,dancing_chk;
+    private CheckBox movie_chk,reading_chk,dancing_chk,chess_chk;
     private TextView age1_txt;
     private SeekBar age_seek;
     String gender,dancing,movie,reading;
+    private String chess;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +72,19 @@ public class Data_Activity2 extends AppCompatActivity {
                 else
                 {
                     dancing="";
+                }
+            }
+        });
+        chess_chk.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b==true)
+                {
+                    chess="Chess";
+                }
+                else
+                {
+                    chess="";
                 }
             }
         });
@@ -161,6 +175,7 @@ public class Data_Activity2 extends AppCompatActivity {
                     intent.putExtra("n12",reading);
                     intent.putExtra("n13",movie);
                     intent.putExtra("n14",dancing);
+                    intent.putExtra("n15",chess);
 
                     startActivity(intent);
                 }
@@ -185,5 +200,6 @@ public class Data_Activity2 extends AppCompatActivity {
         reading_chk=findViewById(R.id.reading_chk);
         movie_chk=findViewById(R.id.movie_chk);
         dancing_chk=findViewById(R.id.dancing_chk);
+        chess_chk=findViewById(R.id.chess_chk);
     }
     }
